@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profile</title>
-    <link rel="stylesheet" href= "homestyle.css">
+    <link rel="stylesheet" href="styles.css">
     <!-- Include Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <!-- Include Gabarito font -->
@@ -14,17 +14,17 @@
 </head>
 <body>
     <div class="container">
-        <img src="images/myprofilepic.png" alt="Profile Picture" class="profile-picture">
+        <img class="profile-picture" src="images/myprofilepic.png" alt="Profile Picture">
         <h1 class="name">Tamilarasan D</h1>
         <div class="icons">
             <button class="containerButton">Download CV</button>
-            <a href="https://twitter.com/tamilarasan12D" class="icon" target="_blank" ><i class="fab fa-twitter"></i></a>
+            <a href="https://twitter.com/tamilarasan12D" class="icon" target="_blank"><i class="fab fa-twitter"></i></a>
             <a href="https://www.linkedin.com/in/tamilarasan-dhanasekaran-382917254?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3Brt6wOhN9SXm9Qs96zcic0g%3D%3D" class="icon" target="_blank"><i class="fab fa-linkedin"></i></a>
             <a href="https://github.com/Tamilarasan-12" class="icon" target="_blank"><i class="fab fa-github"></i></a>
-            <a href="mailto:tamilarsan082@gmail.com" class="icon" target="_blank" ><i class="fas fa-envelope"></i></a>
-           
-         </div>
+            <a href="mailto:tamilarsan082@gmail.com" class="icon" target="_blank"><i class="fas fa-envelope"></i></a>
+        </div>
     </div>
+
     <div class="about-container">
         <h2>About Me</h2>
         <p>Hey, I'm Tamilarasan D, just a regular 20-year-old from Salem, Tamil Nadu. Currently navigating my way through the 4th semester of BCA (Bachelor of Computer Applications) at Sona College of Arts and Science, Salem. Back in the day, I attended Sri Vidhya Bharati Matriculation Higher Secondary School, where I managed to pull off decent scores – 83.3% in 12th grade and a solid 92.1% in 10th grade.<br><br>
@@ -95,56 +95,36 @@
             <div class="skill-card" onclick="toggleSkillDetails(this)">
                 <div class="skill-content">
                     <!-- Replace the image with inline SVG code -->
-                    <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M280-120v-80h160v-124q-49-11-87.5-41.5T296-442q-75-9-125.5-65.5T120-640v-40q0-33 23.5-56.5T200-760h80v-80h400v80h80q33 0 56.5 23.5T840-680v40q0 76-50.5 132.5T664-442q-18 46-56.5 76.5T520-324v124h160v80H280Zm0-408v-152h-80v40q0 38 22 68.5t58 43.5Zm200 128q50 0 85-35t35-85v-240H360v240q0 50 35 85t85 35Zm200-128q36-13 58-43.5t22-68.5v-40h-80v152Zm-200-52Z"/></svg>
-                    <p class="skill-details"> <b>Academic Presentations:</b> <br>
-                         Presented a paper titled "Gamification in Life" at KSR College of Arts and Science.<br><br>
-                        <b>Innovation Recognition:</b><br>
-                         Recognized as one of the top 30 teams out of 140 teams nationwide at Cognizant Technoverse 2023 for the idea "Automated Health Insurance Claims (AHIC)."<br><br>
-                        <b>Continuous Learning:</b><br>
-                         Completed and received a certificate from ICT Academy for the Learnathon 2022 program.<br>
-                         Achieved certification from Skillathon 2022.<br><br>
-                        <b>Creative Endeavors:</b><br>
-                         Participated in various game jams, showcasing dedication to creativity and game development.</p></p>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M840-160q-33 0-56.5-23.5T760-240v-480q0-33 23.5-56.5T840-800h80q33 0 56.5 23.5T1000-720v480q0 33-23.5 56.5T920-160H840Zm-720-80h640v-400H120v400Zm240-280-104-104 57-56 160 160-160 160 104 104 56-56-160-160Zm160 0v-80h240v80H560Z"/></svg>
+                    <p class="skill-details">
+                        <strong>Some of My Achievements:</strong><br>
+                        - Received a Certificate of Participation for the "Web Development Using PHP & MySQL" workshop conducted by the Department of Computer Applications, Sona College of Technology.<br>
+                        - Secured the 2nd position in the intra-college gaming event "Assassin's Creed – Odyssey" organized by the Computer Society of India, Sona Chapter.<br>
+                        - Completed the "Introduction to Programming in C" online course offered by Duke University on Coursera with a score of 98.3%.</p>
                 </div>
             </div>
         </div>
     </div>
 
     <div class="showcase-container">
-        <h2>Project Showcase</h2>
+        <h2>My Showcase</h2>
         <div class="showcase">
-            <button class="arrow left-arrow" onclick="changeSlide(-1)">&lt;</button>
             <div class="showcase-slides">
                 <div class="showcase-slide">
-                    <img src="images/gamejam_deliveryboy.png" alt="Project 1">
-                    <div class="showcase-text">
-                        <p>I'm an indie game developer who's been learning Unity and Godot online.<br> Recently, I won a game jam hosted by AJAY AJ DEV, creating a fun mail <br>delivery game within a time limit.</p>
-                    </div>
+                    <img class="showcase-image" src="images/showcase1.jpg" alt="Showcase Image 1">
                 </div>
                 <div class="showcase-slide">
-                    <img src="images/technovers.jpg" alt="Project 2">
-                    <div class="showcase-text">
-                        <p>Our team excelled in Cognizant's Technoverse 2023, landing in the top 20 <br>out of 140 teams nationwide. Our project focused on Automated Health Insurance Claims (AHIC), showcasing innovation in healthcare technology.</p>
-                    </div>
+                    <img class="showcase-image" src="images/showcase2.jpg" alt="Showcase Image 2">
                 </div>
-                <!-- Add more slides as needed -->
+                <div class="showcase-slide">
+                    <img class="showcase-image" src="images/showcase3.jpg" alt="Showcase Image 3">
+                </div>
             </div>
-            <button class="arrow right-arrow" onclick="changeSlide(1)">&gt;</button>
+            <button class="arrow left-arrow">&#10094;</button>
+            <button class="arrow right-arrow">&#10095;</button>
         </div>
     </div>
 
-    <div class="container2">
-        <img src="images/myprofilepic.png" alt="Profile Picture" class="profile-picture">
-        <div class="icons2">
-            <a href="https://twitter.com/tamilarasan12D" class="icon" target="_blank" ><i class="fab fa-twitter"></i></a>
-            <a href="https://www.linkedin.com/in/tamilarasan-dhanasekaran-382917254?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3Brt6wOhN9SXm9Qs96zcic0g%3D%3D" class="icon" target="_blank"><i class="fab fa-linkedin"></i></a>
-            <a href="https://github.com/Tamilarasan-12" class="icon" target="_blank"><i class="fab fa-github"></i></a>
-            <a href="mailto:tamilarsan082@gmail.com" class="icon" target="_blank" ><i class="fas fa-envelope"></i></a>
-           
-         </div>
-    </div>
-    
-    
 
     <script>
         // JavaScript
