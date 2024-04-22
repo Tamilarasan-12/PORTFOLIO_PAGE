@@ -1,0 +1,92 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+    font-family: "Gabarito", sans-serif; /* Apply Gabarito font to all text */
+    background-color: #000000; /* Dark background color */
+    color: #fff; /* White text color */
+}
+
+/* Container Styles */
+.container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh;
+}
+
+/* Profile Section Styles */
+.profile-section {
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Center vertically */
+    opacity: 0; /* Initially hide profile section */
+    transform: translateY(-100%); /* Initially move profile section above the viewport */
+    transition: opacity 2s ease, transform 2s ease; /* Add transition for opacity and transform */
+   
+}
+
+.container.loaded .profile-section {
+    opacity: 1; /* Show profile section */
+    transform: translateY(0); /* Move profile section to its original position */
+}
+
+.profile-section img {
+    width: 150px;
+    height: 150px;
+    border-radius: 20%;
+    border: 2px solid #fff; /* Add border */
+    margin-right: 20px; /* Add some margin to the right of the profile picture */
+}
+
+.profile-info {
+    text-align: left; /* Align profile info content to left */
+}
+
+.profile-info h1 {
+    font-size: 30px;
+    margin-top: -9px; /* Move name somewhat up */
+    font-family: "Gabarito"; /* Apply Gabarito font to headings */
+}
+
+.social-icons {
+    margin-top: 10px; /* Add margin between name and social icons */
+}
+
+.social-icon {
+    color: #fff;
+    font-size: 24px;
+    margin-right: 10px;
+    margin-left: 5px;
+    text-decoration: none;
+}
+
+.social-icon:hover {
+    color: #24488a; /* Change color on hover */
+}
+
+/* Profile Button Styles */
+.profile-button {
+    display: inline-block;
+    font-family: "Gabarito";
+    padding: 10px 20px; /* Increase padding */
+    background-color: transparent; /* Set background color to transparent */
+    color: #f8f8f8f3;
+    text-decoration: none;
+    border: 1px solid #f7faff; /* Add border */
+    border-radius: 5px; /* Rounded border */
+    margin-top: 10px;
+    margin-bottom: -5px;
+    margin-left: 7px;
+    transition: background-color 0.3s, color 0.3s, transform 0.2s, border-color 0.3s; /* Smooth transitions */
+}
+
+.profile-button:hover {
+    background-color: #7e8085; /* Darker background color on hover */
+    border-color: #7e8085; /* Darker border color on hover */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}

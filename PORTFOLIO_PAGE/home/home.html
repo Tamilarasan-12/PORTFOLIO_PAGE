@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="/home/tamilarasan/WEBSITES - REACT/Html Porfolio/home/homestyle.css">
+    <!-- Include Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- Include Gabarito font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <img src="/home/tamilarasan/WEBSITES - REACT/Html Porfolio/images/myprofilepic.png" alt="Profile Picture" class="profile-picture">
+        <h1 class="name">Tamilarasan D</h1>
+        <div class="icons">
+            <button class="containerButton">Download CV</button>
+            <a href="https://twitter.com/tamilarasan12D" class="icon" target="_blank" ><i class="fab fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/in/tamilarasan-dhanasekaran-382917254?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3Brt6wOhN9SXm9Qs96zcic0g%3D%3D" class="icon" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/Tamilarasan-12" class="icon" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="mailto:tamilarsan082@gmail.com" class="icon" target="_blank" ><i class="fas fa-envelope"></i></a>
+           
+         </div>
+    </div>
+    <div class="about-container">
+        <h2>About Me</h2>
+        <p>Hey, I'm Tamilarasan D, just a regular 20-year-old from Salem, Tamil Nadu. Currently navigating my way through the 4th semester of BCA (Bachelor of Computer Applications) at Sona College of Arts and Science, Salem. Back in the day, I attended Sri Vidhya Bharati Matriculation Higher Secondary School, where I managed to pull off decent scores – 83.3% in 12th grade and a solid 92.1% in 10th grade.<br><br>
+
+            You could say I'm a bit of a tech enthusiast. I love getting my hands dirty with new ideas and gadgets. Open-source is my thing, and I'm always up for supporting and exploring free software. When I'm not buried in textbooks, I'm probably buried in lines of code, working on my latest game project using Unity or Godot. Gaming is not just a hobby; it's a passion. Whether I'm exploring virtual worlds or building my own, I'm always up for the challenge. Learning is my jam – whether it's mastering a new programming language or diving into the latest gaming trends, I'm all in.</p>
+        <img src="/home/tamilarasan/WEBSITES - REACT/Html Porfolio/images/aboutimage.png" alt="About Image" class="about-image">
+    </div>
+
+    <div class="skill-container">
+        <h2>My Skill Cards</h2>
+        <div class="skill-category">
+            <h3>Softwares</h3>
+            <div class="skill-card" onclick="toggleSkillDetails(this)">
+                <div class="skill-content">
+                    <!-- Replace the image with inline SVG code -->
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m437-398 227-226-57-57-170 170-85-85-56 56 141 142ZM40-120v-80h880v80H40Zm120-120q-33 0-56.5-23.5T80-320v-440q0-33 23.5-56.5T160-840h640q33 0 56.5 23.5T880-760v440q0 33-23.5 56.5T800-240H160Zm0-80h640v-440H160v440Zm0 0v-440 440Z"/></svg>
+                        <p class="skill-details">
+                            Office Suites:<br>
+                            - Microsoft Office (Basics)<br>
+                            - LibreOffice (Basics)<br>
+                            - Google Workspace<br><br>
+                            Operating Systems:<br>
+                            - Windows<br>
+                            - Ubuntu Based Distros<br>
+                            - Linux Mint<br><br>
+                            Game Development:<br>
+                            - Unity<br>
+                            - Godot<br><br>
+                            Graphics Editing:<br>
+                            - GIMP (GNU Image Manipulation Program)<br><br>
+                            Pixel Art Creation:<br>
+                            - Aseprite<br><br>
+                            Code Editors:<br>
+                            - Visual Studio Code<br><br>
+                            Version Control:<br>
+                            - GitHub
+                        </p>
+                        
+                </div>
+            </div>
+        </div>
+        <div class="skill-category">
+            <h3>Programming Languages</h3>
+            <div class="skill-card" onclick="toggleSkillDetails(this)">
+                <div class="skill-content">
+                    <!-- Replace the image with inline SVG code -->
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
+                        <path d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm0-80h640v-400H160v400Zm140-40-56-56 103-104-104-104 57-56 160 160-160 160Zm180 0v-80h240v80H480Z"/></svg>
+                    <p class="skill-details"> 
+                        Core Programming Languages: <br>
+                        - C<br>
+                        - C++<br>
+                        - Java<br><br>
+                        Game Development<br>
+                        - C# (Basic, Unity)<br>
+                        - GDScript (Godot)<br><br>
+                        Web Development:<br>
+                        - Html<br>
+                        - Basics of React JS<br>
+                        - CSS<br><br>
+                        Database Management:<br>
+                        - MySQL</p>
+                </div>
+            </div>
+        </div>
+        <div class="skill-category">
+            <h3>Achievements</h3>
+            <div class="skill-card" onclick="toggleSkillDetails(this)">
+                <div class="skill-content">
+                    <!-- Replace the image with inline SVG code -->
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M280-120v-80h160v-124q-49-11-87.5-41.5T296-442q-75-9-125.5-65.5T120-640v-40q0-33 23.5-56.5T200-760h80v-80h400v80h80q33 0 56.5 23.5T840-680v40q0 76-50.5 132.5T664-442q-18 46-56.5 76.5T520-324v124h160v80H280Zm0-408v-152h-80v40q0 38 22 68.5t58 43.5Zm200 128q50 0 85-35t35-85v-240H360v240q0 50 35 85t85 35Zm200-128q36-13 58-43.5t22-68.5v-40h-80v152Zm-200-52Z"/></svg>
+                    <p class="skill-details"> <b>Academic Presentations:</b> <br>
+                         Presented a paper titled "Gamification in Life" at KSR College of Arts and Science.<br><br>
+                        <b>Innovation Recognition:</b><br>
+                         Recognized as one of the top 30 teams out of 140 teams nationwide at Cognizant Technoverse 2023 for the idea "Automated Health Insurance Claims (AHIC)."<br><br>
+                        <b>Continuous Learning:</b><br>
+                         Completed and received a certificate from ICT Academy for the Learnathon 2022 program.<br>
+                         Achieved certification from Skillathon 2022.<br><br>
+                        <b>Creative Endeavors:</b><br>
+                         Participated in various game jams, showcasing dedication to creativity and game development.</p></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="showcase-container">
+        <h2>Project Showcase</h2>
+        <div class="showcase">
+            <button class="arrow left-arrow" onclick="changeSlide(-1)">&lt;</button>
+            <div class="showcase-slides">
+                <div class="showcase-slide">
+                    <img src="/home/tamilarasan/WEBSITES - REACT/Html Porfolio/images/gamejam_deliveryboy.png" alt="Project 1">
+                    <div class="showcase-text">
+                        <p>I'm an indie game developer who's been learning Unity and Godot online.<br> Recently, I won a game jam hosted by AJAY AJ DEV, creating a fun mail <br>delivery game within a time limit.</p>
+                    </div>
+                </div>
+                <div class="showcase-slide">
+                    <img src="/home/tamilarasan/WEBSITES - REACT/Html Porfolio/images/technovers.jpg" alt="Project 2">
+                    <div class="showcase-text">
+                        <p>Our team excelled in Cognizant's Technoverse 2023, landing in the top 20 <br>out of 140 teams nationwide. Our project focused on Automated Health Insurance Claims (AHIC), showcasing innovation in healthcare technology.</p>
+                    </div>
+                </div>
+                <!-- Add more slides as needed -->
+            </div>
+            <button class="arrow right-arrow" onclick="changeSlide(1)">&gt;</button>
+        </div>
+    </div>
+
+    <div class="container2">
+        <img src="/home/tamilarasan/WEBSITES - REACT/Html Porfolio/images/myprofilepic.png" alt="Profile Picture" class="profile-picture">
+        <div class="icons2">
+            <a href="https://twitter.com/tamilarasan12D" class="icon" target="_blank" ><i class="fab fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/in/tamilarasan-dhanasekaran-382917254?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3Brt6wOhN9SXm9Qs96zcic0g%3D%3D" class="icon" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/Tamilarasan-12" class="icon" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="mailto:tamilarsan082@gmail.com" class="icon" target="_blank" ><i class="fas fa-envelope"></i></a>
+           
+         </div>
+    </div>
+    
+    
+
+    <script>
+        // JavaScript
+        document.addEventListener('DOMContentLoaded', function() {
+            const profilePicture = document.querySelector('.profile-picture');
+
+            profilePicture.addEventListener('click', function() {
+                this.classList.toggle('expanded');
+            });
+        });
+
+        function toggleSkillDetails(skillCard) {
+    var skillDetails = skillCard.querySelector('.skill-details');
+    var svgIcon = skillCard.querySelector('svg');
+
+    // Toggle the visibility of the skill details paragraph
+    skillDetails.classList.toggle('show');
+
+    // Toggle the visibility of the SVG icon based on the visibility of the skill details paragraph
+    if (skillDetails.classList.contains('show')) {
+        svgIcon.style.display = 'none'; // Hide the SVG icon
+    } else {
+        svgIcon.style.display = 'block'; // Show the SVG icon
+    }
+    if (skillDetails.classList.contains('show')) {
+                var skillDetailsHeight = skillDetails.offsetHeight;
+                skillCardContainer.style.height = skillDetailsHeight + skillCardContent.offsetTop + 'px';
+            } else {
+                skillCardContainer.style.height = 'auto';
+            }
+    }
+
+
+    let currentIndex = 0;
+const slides = document.querySelectorAll('.showcase-slide');
+
+function changeSlide(direction) {
+    const numSlides = slides.length;
+    currentIndex = (currentIndex + direction + numSlides) % numSlides;
+    const offset = -currentIndex * 100;
+    document.querySelector('.showcase-slides').style.transform = `translateX(${offset}%)`;
+}
+
+
+
+    
+
+
+      
+
+
+    </script>
+
+
+</body>
+</html>

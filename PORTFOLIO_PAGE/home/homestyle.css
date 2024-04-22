@@ -1,0 +1,390 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+    font-family: "Gabarito", sans-serif;
+    background-color: #000000;
+    color: #fff;
+    overflow: hidden;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(100, 102, 104, 0.5);
+}
+
+
+
+/* SCROLLBAR STYLES */
+
+body::-webkit-scrollbar {
+    width: 8px; /* Width of the scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+    background: rgba(153, 143, 143, 0.1); /* Track color */
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: rgba(153, 143, 143, 0.1); /* Thumb color */
+    border-radius: 5px; /* Rounded corners */
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(100, 102, 104, 0.5); /* Thumb color on hover */
+}
+
+
+
+/* CONTAINER STYLES rgba(153, 143, 143, 0.1);*/
+
+.container {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(21, 59, 184, 0.1);
+    box-shadow: 0px 0px 5px rgba(117, 114, 114, 0.562);
+    animation: slideFromTop 1s ease forwards;
+}
+
+@keyframes slideFromTop {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideFromBottom{
+    from {
+        transform: translateY(100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+/* Profile Picture Styles */
+
+.profile-picture {
+    width: 60px;
+    height: 60px;
+    border-radius: 20%;
+    border: 1px solid #fff;
+    margin-right: 10px;
+    transition: width 0.3s, height 0.3s;
+}
+
+.profile-picture.expanded {
+    width: 100px;
+    height: 100px;
+}
+
+/* Name Styles */
+
+.name {
+    font-size: 30px;
+    font-weight: 500;
+    font-family: "Gabarito";
+    margin-right: auto;
+}
+
+/* Icons Styles */
+
+.icons {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+}
+
+.icon {
+    color: #fff;
+    font-size: 24px;
+    margin-left: 45px;
+    text-decoration: none;
+}
+
+.icon:hover {
+    color: #7e8085;
+}
+
+.containerButton {
+    display: inline-block;
+    font-family: "Gabarito";
+    padding: 10px 20px; /* Increase padding */
+    background-color: transparent; /* Set background color to transparent */
+    color: #f8f8f8f3;
+    text-decoration: none;
+    border: 1px solid #f7faff; /* Add border */
+    border-radius: 5px; /* Rounded border */
+    transition: background-color 0.3s, color 0.3s, transform 0.2s, border-color 0.3s; /* Smooth transitions */
+}
+
+.containerButton:hover {
+    background-color: #7e8085; /* Darker background color on hover */
+    border-color: #7e8085; /* Darker border color on hover */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+
+/*ABOUT CONTAINER*/
+
+.about-container {
+    position: relative;
+    padding: 20px;
+    padding-left: 20px;
+    margin-top: 25px;
+    margin-left: -5px;
+    background-color: rgba(153, 143, 143, 0.1);
+    border-radius: 10px;
+    height: 480px;
+    width: 900px;
+    animation: slideFromLeft 1s ease forwards;
+}
+
+@keyframes slideFromLeft {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+
+.about-container h2 {
+    color: #fff;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.about-container p {
+    color: #fff;
+    font-size: 18px;
+    text-align: justify;
+    line-height: 2;
+}
+
+.about-image {
+    position: absolute;
+    top: 5%;
+    right: -2000px;
+    transform: translateY(-10%);
+    width: 400px;
+    height: 450px;
+    animation: slideFromRight 1s ease forwards, floatAnimation 5s infinite ease-in-out alternate;
+}
+
+@keyframes slideFromRight {
+    from {
+        right: -2000px;
+    }
+    to {
+        right: -440px;
+    }
+}
+
+@keyframes floatAnimation {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
+
+/*SKILL CONTAINER*/
+
+.skill-container {
+    position: relative;
+    padding: 20px;
+    padding-bottom: 30px;
+    margin-top: 30px;
+    background-color: rgba(153, 143, 143, 0.1);
+    border-radius: 10px;
+    width: 100%; /* Full width */
+    display: flex; /* Display children horizontally */
+    flex-wrap: wrap; /* Allow wrapping of skill cards */
+    justify-content: space-around; /* Evenly space skill cards */
+    animation: slideFromLeft 1s ease forwards;
+}
+
+.skill-container h2 {
+    color: #fff;
+    font-size: 24px;
+    margin-bottom: 20px; /* Increase margin-bottom for space below the heading */
+    margin-left: 5px; /* Adjust margin to move the heading to the left */
+    width: 100%; /* Make the heading take full width */
+}
+
+.skill-card {
+    background-color: rgba(21, 59, 184, 0.1); /* Background color */
+    padding: 10px; /* Padding around the content */
+    padding-bottom: 100px;
+    padding-top: 50px;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
+    margin-top: 20px; /* Spacing between skill cards */
+    margin-right: 20px; /* Add margin to the right for space between cards */
+    width: calc(50% - 10px); /* Adjust width to fit three cards in a row with spacing */
+    width: 300px; /* Maximum width of the card */
+    height: auto; /* Initial height of the skill card */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; /* Align content vertically */
+    transition: all 1s ease; /* Transition effect */
+    cursor: pointer; /* Change cursor to pointer */
+}
+
+.skill-card:hover {
+    transform: scale(1.05);
+    background-color: rgba(153, 143, 143, 0.1);
+}
+
+.skill-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.skill-card svg {
+    fill: #ffffff; /* Color for the SVG icon */
+    width: 60px; /* Adjust SVG width */
+    height: 60px; /* Adjust SVG height */
+    margin-bottom: 10px;
+    margin-top: 50px;
+    align-items: center; /* Spacing below the SVG */
+}
+
+
+.skill-card p {
+    color: #ffffff; /* Text color */
+    font-size: 18px; /* Font size */
+    line-height: 1.5; /* Line height for readability */
+    text-align:left;
+}
+.skill-details {
+    display: none;
+   
+}
+
+/*  skill card details  */
+
+.skill-details.show {
+    display: block;
+}
+
+
+/*SLIDES CONTAINER*/
+
+.showcase-container {
+    position: relative;
+    padding: 20px;
+    padding-bottom: 30px;
+    margin-top: 30px;
+    background-color: rgba(153, 143, 143, 0.1);
+    border-radius: 10px;
+    animation: slideFromLeft 1s ease forwards;
+}
+
+.showcase-container h2 {
+    color: #fff;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.showcase {
+    position: relative;
+    overflow: hidden;
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: none;
+    color: #ffffff80;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.left-arrow {
+    left: 10px;
+    padding: 10px;
+    border-style: solid;
+    border-radius: 100px;
+}
+.left-arrow :hover{
+    color: #fff;
+}
+
+.right-arrow {
+    right: 10px;
+    padding: 10px;
+    border-style: solid;
+    border-radius: 100px;
+   
+}
+
+
+.showcase-slides {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.showcase-slide {
+    width: 100%; /* One slide visible at a time */
+    flex: 0 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.showcase-slide img {
+    width: 50%; /* Make images responsive */
+    max-width: 100%; /* Ensure images don't exceed container width */
+    height: 400px;
+    border-radius: 10px;
+    
+}
+
+.showcase-text {
+    width: 50%; /* Set width for the text */
+    padding: 50px;
+    background-color: rgba(21, 59, 184, 0.1);
+    border-radius: 5px;
+    color: #fff;
+    margin-left: 10px; /* Adjust margin */
+}
+
+
+/*END CONTAINER*/
+
+.container2 {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(153, 143, 143, 0.1);
+    box-shadow: 0px 0px 5px rgba(117, 114, 114, 0.562);
+    animation: slideFromBottom 1s ease forwards;
+}
